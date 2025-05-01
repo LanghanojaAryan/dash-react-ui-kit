@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -25,8 +29,8 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#5932EA',
+					foreground: '#FFFFFF'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -53,14 +57,35 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					DEFAULT: '#FFFFFF',
+					foreground: '#344054',
+					primary: '#5932EA',
+					'primary-foreground': '#FFFFFF',
+					accent: '#F9FAFB',
+					'accent-foreground': '#667085',
+					border: '#EAECF0',
+					ring: '#5932EA'
+				},
+				success: {
+					DEFAULT: '#41D37E',
+					light: '#F1FDF7',
+				},
+				warning: {
+					DEFAULT: '#F7B84B',
+					light: '#FFF9EF',
+				},
+				danger: {
+					DEFAULT: '#F04438',
+					light: '#FFF0EF',
+				},
+				info: {
+					DEFAULT: '#3E7BFA',
+					light: '#F0F6FF',
+				},
+				text: {
+					DEFAULT: '#344054',
+					muted: '#667085',
+					light: '#98A2B3',
 				}
 			},
 			borderRadius: {
